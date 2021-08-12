@@ -37,7 +37,9 @@ export const AppContainer = connect(
 export const Home = (props) => {
   return (
     <span>
-      <h2>Home</h2>
+      <h2>도커 미니 프로젝트</h2>
+      <h2>강사님 교육 감사합니다!</h2>
+      <h2>LG전자 249248 명혁</h2>
     </span>
   );
 }
