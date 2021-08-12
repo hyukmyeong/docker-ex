@@ -1,17 +1,20 @@
-# DockerEx 깃헙과 연동 예제
+# React Flask example
 
-### Installation
-<pre>
-cd ~
-cd gitEx
-git clone https://github.com/looker2zip/DockerEx.git
-cd DockerEx
-</pre>
+## Installation
 
-### Run
-<pre>
-#Login for Private Docker Repository
-docker login
-docker pull lookerz/lookerz-private
-docker run -p 80:80 -v /home/k8s/gitEx/DockerEx/Project:/var/www/html lookerz/lookerz-private
-</pre>
+Requires python and node.
+
+1. ```pip install flask```
+2. ```cd client && npm install```
+
+## Development
+
+1. In the client directory: ```npm start```
+2. In a separate terminal, in the root directory: ```python run.py```
+3. Go to [http://localhost:3000/](http://localhost:3000/)
+
+## Production
+
+1. In the client directory: ```npm run build```
+2. After the build finishes: In the root directory: ```python run.py```
+3. Go to [http://localhost:5000/](http://localhost:5000/)
